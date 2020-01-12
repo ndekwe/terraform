@@ -33,14 +33,17 @@ Step 8: Verify the execution plan
         $ terraform plan
         
 Step 9: Provision AWS infrastructure resources as well as the state file 
+
         $ terraform apply
-        In the outpout of this command, terraform will ask you to confirm after it displays "Enter a value". 
-        Once you enter 'yes' the provision will start as expected. When the provision is over, terraform will display the following
-        information:
+        
+In the outpout of this command, terraform will ask you to confirm after it displays "Enter a value".  \
+Once you enter 'yes' the provision will start as expected. \
+When the provision is over, terraform will display the following information:
         Apply complete! Resources: x added, 0 changed, 0 destroyed.
         Outputs:
         elb_dns_name = terraform-asg-advocacy-<ID>.<region>.elb.amazonaws.com
    
 To make sure the infrastructure has been provisionned as expected, log into AWS console and click on "Instances". 
-You will notice newly provisionned EC2.
+You will notice newly provisionned EC2. \
+
 Congratulations, you have now provisionned a highly available and distributed infrastructure on AWS, via Terraform!
