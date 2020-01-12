@@ -1,4 +1,4 @@
-# terraform
+# Using Terraform to provision a distributed and highly available infrastructure on AWS
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
 ![alt text](images/image1.png) 
 
