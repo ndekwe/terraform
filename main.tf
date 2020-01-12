@@ -58,9 +58,9 @@ variable "server_port" {
 # 	value = "${aws_instance.advocacy.public_ip}"
 # }
 
-output "elb_dns_name" {
-     value = "${aws_elb.advocacy.dns_name}"
-}
+#output "elb_dns_name" {
+#     value = "${aws_elb.advocacy.dns_name}"
+#}
 
 data "aws_availability_zones" "all" {
 }
