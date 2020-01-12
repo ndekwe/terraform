@@ -47,3 +47,7 @@ To make sure the infrastructure has been provisionned as expected, log into AWS 
 You will notice newly provisionned EC2. 
 
 Congratulations, you have now provisionned a highly available and distributed infrastructure on AWS, via Terraform!
+
+Step 10: Unless you want to keep your infrastructure running, do not forget to destroy it with the following command:
+        
+        $ terraform destroy
