@@ -42,7 +42,7 @@ When the provision is over, terraform will display the following information:
 
         Apply complete! Resources: x added, 0 changed, 0 destroyed. 
         Outputs:
-        elb_dns_name = terraform-asg-advocacy-<ID>.<region>.elb.amazonaws.com
+        elb_dns_name = terraform-asg-advocacy-<"ID">.<"region">.elb.amazonaws.com
    
 To make sure the infrastructure has been provisionned as expected, log into AWS console and click on "Instances" to notice newly provisionned EC2. 
 
