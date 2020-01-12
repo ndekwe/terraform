@@ -44,6 +44,6 @@ When the provision is over, terraform will display the following information:
         elb_dns_name = terraform-asg-advocacy-<ID>.<region>.elb.amazonaws.com
    
 To make sure the infrastructure has been provisionned as expected, log into AWS console and click on "Instances". 
-You will notice newly provisionned EC2. \
+You will notice newly provisionned EC2. 
 
 Congratulations, you have now provisionned a highly available and distributed infrastructure on AWS, via Terraform!
