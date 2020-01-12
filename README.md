@@ -2,7 +2,7 @@
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
 
 ## Prerequisites
-- Having a AWS account and the corresponding access and secret keys.
+Having an AWS account and the corresponding access and secret keys.
 
 ## Steps
 Step 1: Download Terraform from terraform.io
