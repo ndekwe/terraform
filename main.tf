@@ -49,19 +49,6 @@ resource "aws_security_group" "instance" {
         }
 }
 
-variable "server_port" {
-	description = "The port the server will use for HTTP requests"
-	default = 8080
-}
-
-# output "public_ip" { 
-# 	value = "${aws_instance.advocacy.public_ip}"
-# }
-
-#output "elb_dns_name" {
-#     value = "${aws_elb.advocacy.dns_name}"
-#}
-
 data "aws_availability_zones" "all" {
 }
 
