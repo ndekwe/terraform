@@ -1,5 +1,8 @@
 # terraform
-This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
+This repository holds codes used to provision a distributed and highly available infrastructure on AWS. \n
+
+![alt text](images/image1.png) 
+
 
 ## Prerequisites
 Having an AWS account and the corresponding access and secret keys.
