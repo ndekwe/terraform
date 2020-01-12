@@ -1,2 +1,4 @@
 # terraform
-This repository holds codes used to automatically build infrastructure using Terraform
+This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
+
+
