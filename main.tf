@@ -2,7 +2,7 @@ provider "aws" {
 	region = "eu-west-3"
 }
 
-resource "aws_instance" "example" {
+resource "aws_instance" "advocacy" {
 	ami	="ami-0bb607148d8cf36fb"
 	instance_type = "t2.micro"
 	vpc_security_group_ids = ["${aws_security_group.instance.id}"]
@@ -14,11 +14,11 @@ resource "aws_instance" "example" {
 		   EOF
 
 	tags =  {
-	   Name = "terraform-example"
+	   Name = "terraform-advocacy"
 	}
 }
 
-resource "aws_launch_configuration" "example" {
+resource "aws_launch_configuration" "advocacy" {
         image_id        ="ami-0bb607148d8cf36fb"
         instance_type   = "t2.micro"
         security_groups = ["${aws_security_group.instance.id}"]
@@ -35,7 +35,7 @@ resource "aws_launch_configuration" "example" {
 }
 
 resource "aws_security_group" "instance" {
-	name = "terraform-example-instance"
+	name = "terraform-advocacy-instance"
 
 	ingress {
 		from_port   =  var.server_port
@@ -55,37 +55,37 @@ variable "server_port" {
 }
 
 # output "public_ip" { 
-# 	value = "${aws_instance.example.public_ip}"
+# 	value = "${aws_instance.advocacy.public_ip}"
 # }
 
 output "elb_dns_name" {
-     value = "${aws_elb.example.dns_name}"
+     value = "${aws_elb.advocacy.dns_name}"
 }
 
 data "aws_availability_zones" "all" {
 }
 
-resource "aws_autoscaling_group" "example" {
-        launch_configuration = aws_launch_configuration.example.id
+resource "aws_autoscaling_group" "advocacy" {
+        launch_configuration = aws_launch_configuration.advocacy.id
 	#availability_zones   = ["${data.aws_availability_zones.all.names}"]
 	availability_zones   = ["eu-west-3a", "eu-west-3b","eu-west-3c"]
 
-	load_balancers       = ["${aws_elb.example.name}"]
+	load_balancers       = ["${aws_elb.advocacy.name}"]
 	health_check_type    = "ELB"
 
 	min_size = 2
 	max_size = 10
-	desired_capacity     = 5
+	desired_capacity     = 3
 
         tag {
                 key   			=  "Name"
-                value     		=  "terraform-asg-example"
+                value     		=  "terraform-asg-advocacy"
                 propagate_at_launch     = true
         }
 }
 
-resource "aws_elb" "example" {
-        name                 = "terraform-asg-example"
+resource "aws_elb" "advocacy" {
+        name                 = "terraform-asg-advocacy"
         #availability_zones   = ["${data.aws_availability_zones.all.names}"]
 	availability_zones   = ["eu-west-3a", "eu-west-3b","eu-west-3c"]
 
@@ -106,7 +106,7 @@ resource "aws_elb" "example" {
 }
 
 resource "aws_security_group" "elb" {
-        name = "terraform-example-elb"
+        name = "terraform-advocacy-elb"
 
         ingress {
                 from_port   =  80
