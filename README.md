@@ -1,13 +1,13 @@
 # terraform
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
 
-# Prerequisites
+## Prerequisites
 - Having a AWS account and the corresponding access and secret keys.
 
-# Steps
-Step 1: Download Terraform from terraform.io
+## Steps
+### Step 1: Download Terraform from terraform.io
 
-Step 2: Unzip the downloaded terraform file
+### Step 2: Unzip the downloaded terraform file
 
 Step 3: Place "terraform" binary on the PATH
 
