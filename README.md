@@ -2,6 +2,9 @@
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
 ![alt text](images/image1.png) 
 
+
+The following steps have been executed on Ubuntu Operating System. 
+
 ## Prerequisites
 Having an AWS account and the corresponding access and secret keys.
 
