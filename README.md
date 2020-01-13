@@ -1,7 +1,6 @@
 # Using Terraform to provision a distributed and highly available infrastructure on AWS
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
-![alt text](images/image1.png) 
-
+![alt text](images/code2infra.png) 
 
 The following steps have been executed on Ubuntu Operating System. 
 
@@ -45,7 +44,9 @@ Once you enter 'yes' the provision will start as expected. \
 When the provision is over, terraform will display the following information: 
 
         Apply complete! Resources: x added, 0 changed, 0 destroyed. 
+        
         Outputs:
+        
         elb_dns_name = terraform-asg-advocacy-<"ID">.<"region">.elb.amazonaws.com
    
 To make sure the infrastructure has been provisionned as expected, log into AWS console and click on "Instances" to notice newly provisionned EC2. 
