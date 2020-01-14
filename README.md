@@ -1,6 +1,6 @@
 # Using Terraform to provision a distributed and highly available infrastructure on AWS
 This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
-![alt text](images/img1.png) 
+![alt text](images/img1.jpg) 
 
 The following steps have been executed on Ubuntu Operating System. 
 
