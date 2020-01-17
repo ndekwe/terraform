@@ -1,8 +1,8 @@
 # Using Terraform to provision a distributed and highly available infrastructure on AWS
-This repository holds codes used to provision a distributed and highly available infrastructure on AWS.
+This repository holds codes used to provision a distributed and highly available infrastructure on AWS, via Terraform.
 ![alt text](images/img1.jpg) 
 
-The following steps have been executed on Ubuntu Operating System. 
+The following steps have been executed on Ubuntu Operating System, release 16.04.  
 
 ## Prerequisites
 Having an AWS account and the corresponding access and secret keys.
