@@ -9,7 +9,7 @@ resource "aws_instance" "advocacy" {
 
 	user_data = <<-EOF
 		   #!/bin/bash
-		   echo "Hello, World" > index.html
+		   echo "Hello HashiCorp!" > index.html
 		   nohup busybox httpd -f -p "${var.server_port}" &
 		   EOF
 
@@ -25,7 +25,7 @@ resource "aws_launch_configuration" "advocacy" {
 
         user_data = <<-EOF
                    #!/bin/bash
-                   echo "Hello, World" > index.html
+                   echo "Hello HashiCorp" > index.html
                    nohup busybox httpd -f -p "${var.server_port}" &
                    EOF
 
