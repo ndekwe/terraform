@@ -12,7 +12,11 @@ Having an AWS account and the corresponding access and secret keys.
 
 **Step 2**: Unzip the downloaded terraform file
 
+        $ unzip terraform_"<VERSION>"_linux_amd64.zip
+
 **Step 3**: Place "terraform" binary on the PATH
+
+        $ mv terraform /usr/bin/terraform
 
 **Step 4**: Clone ndekwe/terraform github project
 
