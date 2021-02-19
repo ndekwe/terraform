@@ -8,38 +8,38 @@ The following steps have been executed on Ubuntu Operating System, release 16.04
 Having an AWS account and the corresponding access and secret keys.
 
 ## Steps
-**Step 1**: Download Terraform from [terraform.io](https://www.terraform.io/downloads.html)
+**Step 1**: Download Terraform from [terraform.io](https://www.terraform.io/downloads.html):
 
-**Step 2**: Unzip the downloaded terraform file
+**Step 2**: Unzip the downloaded terraform file:
 
         $ unzip terraform_"<VERSION>"_linux_amd64.zip
 
-**Step 3**: Place "terraform" binary on the PATH
+**Step 3**: Place "terraform" binary on the PATH:
 
         $ mv terraform /usr/bin/terraform
 
-**Step 4**: Clone ndekwe/terraform github project
+**Step 4**: Clone ndekwe/terraform github project:
 
         $ git clone https://github.com/ndekwe/terraform.git
                 
-**Step 5**: Access project directory
+**Step 5**: Access project directory:
 
         $ cd terraform/
         
-**Step 6**: Initialise terraform in order to get the right provider plugin for the project
+**Step 6**: Initialise terraform in order to get the right provider plugin for the project:
 
         $ terraform init 
         
-**Step 7**: Setup "AWS access" and "AWS secret access" keys on CLI
+**Step 7**: Setup "AWS access" and "AWS secret access" keys on CLI:
 
         $ export AWS_ACCESS_KEY="AWS access key goes here"
         $ export AWS_SECRET_ACCESS_KEY="AWS secret access key goes here"
         
-**Step 8**: Verify the execution plan
+**Step 8**: Verify the execution plan:
 
         $ terraform plan
         
-**Step 9**: Provision AWS infrastructure resources as well as the state file 
+**Step 9**: Provision AWS infrastructure resources as well as the state file :
 
         $ terraform apply
         
